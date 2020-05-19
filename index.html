@@ -12,28 +12,36 @@
         <div id="box"></div>
     </div>
     <div class="sidebar">
-        <label for="x-position">X</label>
-        <input type="number" id="x-position" name="x-position" value="3">
-
-        <label for="y-position">Y</label>
-        <input type="number" id="y-position" name="y-position" value="3">
-
-        <label for="blur">Blur</label>
-        <input type="number" id="blur" name="blur" value="5">
-
-        <label for="spread">Spread</label>
-        <input type="number" id="spread" name="spread" value="6">
+        <div class="container">
+            <label for="x-position" class="absolute">X Offset</label>
+            <input type="number" id="x-position" name="x-position" value="3">
+        </div>
         
-        <label for="shadow-color">Shadow</label>
+        <div class="container">
+            <label for="y-position" class="absolute">Y Offset</label>
+            <input type="number" id="y-position" name="y-position" value="3">
+        </div>
+        
+        <div class="container">
+            <label for="blur" class="absolute">Blur</label>
+            <input type="number" id="blur" name="blur" value="5">
+        </div>
+        
+        <div class="container">
+            <label for="spread" class="absolute">Spread</label>
+            <input type="number" id="spread" name="spread" value="6">
+        </div>
+        
+        <label for="shadow-color">Shadow Color</label>
         <input type="color" id="shadow-color" name="shadow-color" value="#000000">
         
         <hr>
 
-        <label for="box-color">Box</label>
-        <input type="color" id="box-color" name="box-color" value="#FFD700">
+        <label for="box-color">Box Color</label>
+        <input type="color" id="box-color" name="box-color" value="#962D3E">
         
-        <label for="background-color">Background</label>
-        <input type="color" id="background-color" name="background-color" value="#FFFFFF">
+        <label for="background-color">Background Color</label>
+        <input type="color" id="background-color" name="background-color" value="#D9D9D9">
     </div>
 </body>
 </html>

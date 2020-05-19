@@ -14,14 +14,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    background-color: var(--background-color, #FFFFFF)
+    background-color: var(--background-color, #D9D9D9)
 }
 
 #box {
     height: 200px;
     width: 200px;
     margin: 25px;
-    background-color: var(--box-color, #FFD700);
+    background-color: var(--box-color, #962D3E);
     box-shadow: 
         calc(var(--x-position, 3) * 1px) 
         calc(var(--y-position, 3) * 1px)
@@ -34,39 +34,80 @@ body {
     min-width: 130px;
     width: 20%;
     color: white;
-    background-color: #333;
+    background-color: #0D0D0D;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
     padding: .5rem 1rem;
+    position: relative;
 }
 
 .sidebar label {
+    font-size: 1.5rem;
+    line-height: 2rem;
     margin-top: .75rem;
     margin-bottom: .15rem;
     font-weight: bold;
 }
 
+/* .sidebar .absolute {
+    cursor: pointer;
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    position: absolute;
+    background-color: #595959;
+    text-align: center;
+    border-radius: 100vmax 0 0 100vmax;
+    border: 1px solid #0D0D0D;
+} */
+
 .sidebar input[type="number"] {
+    height: 2rem;
     width: 100%;
-    padding: .25rem .5rem;
+    padding: .25rem 1rem;
     font-family: inherit;
     font-size: inherit;
     border: 1px solid transparent;
-    border-radius: .3em;
+    border-radius: 100vmax;
+    text-align: right;
 }
 
 .sidebar input[type="color"] {
     width: 100%;
-    border-radius: .3em;
+    border-radius: 100vmax;
     background-color: white;
-    border: 1px solid transparent;
+    border: none;
     cursor: pointer;
+    outline: none;
 }
 
-.sidebar input:focus {
-    border: 1px solid #0AF;
+.sidebar input:hover,
+.sidebar input:focus,
+.sidebar input:active {
+    border: 1px solid #348899;
 }
 
 .sidebar hr {
     margin: 1rem -1rem .4rem -1rem;
+}
+
+@media(min-width: 1200px) {
+    .sidebar .container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .sidebar .absolute {
+        cursor: pointer;
+        display: inline-block;
+        width: 40%;
+        margin: 0;
+        position: absolute;
+        background-color: #595959;
+        text-align: center;
+        border-radius: 100vmax 0 0 100vmax;
+        border: 1px solid #0D0D0D;
+    }
 }
